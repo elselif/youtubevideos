@@ -1,0 +1,46 @@
+ #include <iostream>
+
+ using namespace std;
+
+ //kullanıcıdan alınan iki farklı matrisin toplamanı bulduran program
+
+ int main(){
+
+int i,j,n,m;
+
+int dizi1[10][10],dizi2[10][10],dizi3[10][10];
+
+printf("satir sayisini giriniz:");
+scanf("%d",&n);
+
+printf("sutun sayisini giriniz:");
+scanf("%d",&m);
+
+printf("1. matrisimiz\n");
+
+for(i=1;i<=n;i++)
+{
+	for(j=1;j<=m;j++){
+	printf("%d.satir %d. sutundaki elemani giriniz",i,j);
+	scanf("%d",&dizi1[i][j]);
+	}
+}
+printf("2.matris\n");
+
+for(i=1;i<=n;i++)
+{
+	for(j=1;j<=m;j++){
+	printf("%d.satir %d. sutundaki elemani giriniz",i,j);
+	scanf("%d",&dizi2[i][j]);
+	}
+}
+
+for(i=!;i<=n;i++){
+	for(j=1;j<=m;j++){
+	dizi3[i][j]=dizi[i][j]+dizi2[i][j];
+	printf("%d",dizi3[i][j]);
+	}
+	printf("\n");
+}
+
+ }
