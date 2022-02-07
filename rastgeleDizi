@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+//rastgele istedigimiz kadar dizi ureten program
+int main(){
+	srand(time(NULL)); //rastgele deger ureten fonksiyon
+	
+	int n,s=0;
+	printf("lutfen bir n degeri giriniz:");
+	scanf("%d",&n);
+	
+	int dizi[n];
+	
+	for(s=0;s<n;s++){
+		dizi[s]=rand();
+		
+	}
+	
+		for(s=0;s<n;s++){
+		printf("%d ",dizi[s]);
+	}
+	
+return 0;
+}
