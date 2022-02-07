@@ -35,10 +35,10 @@ for(i=1;i<=n;i++)
 	}
 }
 
-for(i=!;i<=n;i++){
+for(i=1;i<=n;i++){
 	for(j=1;j<=m;j++){
-	dizi3[i][j]=dizi[i][j]+dizi2[i][j];
-	printf("%d",dizi3[i][j]);
+	dizi3[i][j]=dizi1[i][j]+dizi2[i][j];
+	printf("         %d",dizi3[i][j]);
 	}
 	printf("\n");
 }
