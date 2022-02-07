@@ -1,0 +1,23 @@
+#include <stdio.h>
+//1den n kadar olan sayıların faktoriyelini hesaplayan program
+
+int faktoriyel(int n){
+	int s,f=1;
+	for(s=1;s<=n;s++){
+		f=f*s;
+	}
+	return f;
+}
+
+
+
+int main(){
+	int s,n;
+	
+	printf("lutfen bir n degerini giriniz :");
+	scanf("%d",&n);
+	
+	for(s=1;s<=n;s++){
+		printf("%d sayisinin faktoriyeli = %d'dir.\n",s,faktoriyel(s));
+	}
+}
